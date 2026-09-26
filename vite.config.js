@@ -4,12 +4,6 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   build: {
-    target: "es2020",
-    cssMinify: "lightningcss",
-    rollupOptions: {
-      output: {
-        manualChunks: undefined
-      }
-    }
+    target: "es2020"
   }
 });
